@@ -11,7 +11,7 @@ body, a:link, a:visited, a:active{
 }
 .title, .addDancerButton{
   padding:5px 12px;
-  float:right;
+  float: none;
 }
 .topbar{
   height:32px;
