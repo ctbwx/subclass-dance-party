@@ -1,3 +1,8 @@
+ @font-face {
+   font-family: Misfits;
+   src: url('Misfit2.ttf');
+ }
+
 body, html{
   height:100%;
 }
@@ -11,19 +16,36 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 
 }
-.title, .addDancerButton{
-  padding: 10px;
-  margin-right: 30px;
-  border-right: 30px;
-  border: 3px solid white;
-  background-color: #555;
+.title, .addDancerButton, .lineUpButton{
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Misfits;
+  color: #0fa4b9;
+  font-size: 20px;
+  background: #6c7175;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
-.topbar{
+
+.danceButtonDiv{
+  width: 75%;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+}
+.topbar {
   height:32px;
-  background-color: #555;
+  color: #0fa4b9;
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: Misfits;
+  text-align: center;
+  text-shadow: -3px 0 #7ac47a, 0 3px #7ac47a, 3px 0 #7ac47a, 0 -3px #7ac47a;
 }
 .title{
   background-color: #777;
+  padding: 10px;
 }
 .blinkyDancer{
   width: 150px;

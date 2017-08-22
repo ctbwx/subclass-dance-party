@@ -11,7 +11,20 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    console.log(dancer.$node)
     $('body').append(dancer.$node);
+
+    window.dancers.push(dancer);
+
     });
 
+    $('.lineUpButton').on('click', function(event) {
+
+      var arr = window.dancers;
+      var left = 10;
+      arr.forEach(function(dancer){
+        left += 10;
+        $(dancer.$node).css({"top" : "75%", "left" : left.toString() + "px"});
+      })
+    })
 });
