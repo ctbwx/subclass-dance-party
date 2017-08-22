@@ -33,8 +33,15 @@ body, a:link, a:visited, a:active{
 }
 
 .rickDancer{
-  width: 150px;
-  height: 200px;
-  content: url('http://i.imgur.com/maF3zNJ.png');
+  width: 200px;
+  height: 275px;
+  content: url('http://i.imgur.com/XLjssWe.png');
+  position:absolute;
+}
+
+.mortyDancer{
+  width: 200px;
+  height: 275px;
+  content: url('https://vignette3.wikia.nocookie.net/rickandmorty/images/a/ab/PM-080.png/revision/latest?cb=20160916030351');
   position:absolute;
 }

@@ -1,7 +1,9 @@
 var mortyDancer = function(top, left) {
-  makeBlinkyDancer.call(this);
+  makeDancer.call(this, top, left);
 
+  this.$node = $('<span class="mortyDancer"></span>');
+  this.setPosition(top, left);
 };
 
-mortyDancer.prototype = Object.create(makeBlinkyDancer.prototype);
+mortyDancer.prototype = Object.create(makeDancer.prototype);
 mortyDancer.prototype.constructor = mortyDancer;
