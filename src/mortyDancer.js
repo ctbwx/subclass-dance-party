@@ -1,4 +1,4 @@
-var mortyDancer = function(top, left, right, bottom) {
+var mortyDancer = function(top, left) {
   makeBlinkyDancer.call(this);
 
 };
