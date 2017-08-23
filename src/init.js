@@ -7,7 +7,7 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
     // make a dancer with a random position
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
+      $("body").height() * (Math.random() * (.74 - .23) + .23),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
@@ -19,12 +19,6 @@ $(document).ready(function() {
     });
 
     $('.lineUpButton').on('click', function(event) {
-
-      var arr = window.dancers;
-      var left = 10;
-      arr.forEach(function(dancer){
-        left += 10;
-        $(dancer.$node).css({"top" : "75%", "left" : left.toString() + "px"});
-      })
-    })
+      
+    });
 });

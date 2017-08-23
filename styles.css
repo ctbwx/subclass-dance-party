@@ -1,6 +1,6 @@
  @font-face {
    font-family: Misfits;
-   src: url('Misfit2.ttf');
+   src: url('MISFITS_.ttf');
  }
 
 body, html{
@@ -21,7 +21,7 @@ body, a:link, a:visited, a:active{
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Misfits;
-  color: #0fa4b9;
+  color: #4B8B9C;
   font-size: 20px;
   background: #6c7175;
   padding: 10px 20px 10px 20px;
@@ -31,39 +31,56 @@ body, a:link, a:visited, a:active{
 .danceButtonDiv{
   width: 75%;
   margin: auto;
-  margin-top: 4%;
+  margin-top: 6%;
   text-align: center;
 }
 .topbar {
   height:32px;
-  color: #0fa4b9;
+  color: #4B8B9C;
   font-weight: lighter;
   font-size: 30px;
   font-family: Misfits;
   text-align: center;
-  text-shadow: -3px 0 #7ac47a, 0 3px #7ac47a, 3px 0 #7ac47a, 0 -3px #7ac47a;
+  text-shadow: -3px 0 #00FF16, 0 3px #00FF16, 3px 0 #00FF16, 0 -3px #00FF16;
 }
 .title{
   background-color: #777;
   padding: 10px;
 }
 .blinkyDancer{
-  width: 150px;
-  height: 200px;
+  width: 60px;
+  height: 80px;
   content: url('http://i.imgur.com/maF3zNJ.png');
   position:absolute;
 }
 
 .rickDancer{
-  width: 200px;
-  height: 275px;
-  content: url('http://i.imgur.com/XLjssWe.png');
+  width: 125px;
+  height: 215px;
+  content: url('https://68.media.tumblr.com/0d29a110bbd89fface87d17f6dade085/tumblr_oof0gkLGUY1wnofxjo1_500.gif');
   position:absolute;
 }
 
-.mortyDancer{
-  width: 200px;
-  height: 275px;
-  content: url('https://vignette3.wikia.nocookie.net/rickandmorty/images/a/ab/PM-080.png/revision/latest?cb=20160916030351');
+.meeseeksDancer{
+  width: 125px;
+  height: 225px;
+  animation-duration: 1s;
+  content: url('http://i.imgur.com/cmNlHdA.gif');
   position:absolute;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.jerryDancer{
+  width: 400px;
+  height: 400px;
+  content: url('Jerry.png');
+  position: absolute;
+  /*animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;*/
 }
